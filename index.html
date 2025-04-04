@@ -9,12 +9,12 @@
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
-      background-color: #fdfcf9;
+      background-color: #f9f9f7;
       color: #333;
     }
     header {
       background: url('https://images.unsplash.com/photo-1598971846145-c4e88f8b3ecb') center/cover no-repeat;
-      height: 100vh;
+      height: 90vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -26,17 +26,17 @@
     }
     header h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 3em;
+      font-size: 3.5em;
       margin: 0;
     }
     header p {
-      font-size: 1.3em;
+      font-size: 1.4em;
       margin: 10px 0 20px;
     }
     header a {
       background-color: #7e9e7a;
       color: white;
-      padding: 10px 20px;
+      padding: 12px 24px;
       text-decoration: none;
       border-radius: 5px;
     }
@@ -47,23 +47,27 @@
     }
     h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 2em;
+      font-size: 2.2em;
       margin-bottom: 20px;
+      color: #4a754a;
     }
-    .product {
+    .products {
       display: flex;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 30px;
+      justify-content: center;
     }
     .product-item {
-      flex: 1 1 250px;
+      width: 250px;
       border: 1px solid #ddd;
       border-radius: 8px;
       padding: 15px;
       background: #fff;
+      text-align: center;
     }
-    .faq-item {
-      margin-bottom: 20px;
+    .product-item img {
+      width: 100%;
+      border-radius: 5px;
     }
     footer {
       background: #eee;
@@ -78,63 +82,28 @@
 <header>
   <h1>Beaury</h1>
   <p>Du chanvre, du cœur, de la ferme</p>
-  <a href="#produits">Découvrir nos fleurs</a>
+  <a href="#produits">Voir nos fleurs</a>
 </header>
 
 <section id="a-propos">
-  <h2>Une histoire de famille</h2>
-  <p>Beaury est né d’un GAEC familial niché dans les Ardennes. Ici, on cultive le chanvre avec soin et respect, selon des pratiques responsables. Ce site est aussi une aventure amicale, lancée pour partager les bienfaits de notre terre.</p>
+  <h2>Notre histoire</h2>
+  <p>Beaury est une boutique en ligne de CBD issue d'un GAEC familial dans les Ardennes. 
+  Nous cultivons et transformons notre propre chanvre pour vous offrir des fleurs de haute qualité, locales et naturelles.</p>
 </section>
 
 <section id="produits">
   <h2>Nos fleurs de CBD</h2>
-  <div class="product">
+  <div class="products">
     <div class="product-item">
+      <img src="img/harlequin.jpg" alt="Harlequin">
       <h3>Harlequin</h3>
-      <p>CBD : 6% • Goût doux et fruité</p>
-      <p><strong>À partir de 7€/g</strong></p>
+      <p>CBD : 6% • Relaxation douce</p>
+      <p><strong>7€/g</strong></p>
     </div>
     <div class="product-item">
+      <img src="img/sweet.jpg" alt="Sweet Pure">
       <h3>Sweet Pure</h3>
-      <p>CBD : 10% • Effet relaxant</p>
-      <p><strong>À partir de 8€/g</strong></p>
+      <p>CBD : 10% • Floral et apaisant</p>
+      <p><strong>8€/g</strong></p>
     </div>
-    <!-- Ajoute d'autres produits ici -->
-  </div>
-</section>
-
-<section id="valeurs">
-  <h2>Nos valeurs</h2>
-  <ul>
-    <li>🌿 Culture naturelle et sans pesticides</li>
-    <li>👨‍🌾 Production locale et familiale</li>
-    <li>🚜 Circuit court : de la ferme à vous</li>
-    <li>🌍 Respect de la nature et du vivant</li>
-  </ul>
-</section>
-
-<section id="faq">
-  <h2>Questions fréquentes</h2>
-  <div class="faq-item">
-    <h4>Le CBD est-il légal ?</h4>
-    <p>Oui, le CBD est autorisé tant que le taux de THC est inférieur à 0,3%.</p>
-  </div>
-  <div class="faq-item">
-    <h4>Quelle différence entre THC et CBD ?</h4>
-    <p>Le CBD n'est pas psychoactif, contrairement au THC. Il apaise sans "planer".</p>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <p>📩 contact@beaury.fr</p>
-  <p>📍 Ardennes, France</p>
-  <p>Suivez-nous sur Instagram : @beaury_cbd</p>
-</section>
-
-<footer>
-  &copy; 2025 Beaury — Fleurs de CBD artisanales
-</footer>
-
-</body>
-</html>
+    <!-- Tu peux dupliquer ce bloc pour chaque variété -->
